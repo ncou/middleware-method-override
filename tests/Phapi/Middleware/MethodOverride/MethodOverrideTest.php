@@ -65,6 +65,7 @@ class MethodOverrideTest extends TestCase
         //$request->shouldReceive('withMethod')->with('PUT')->andReturnSelf();
         $response = \Mockery::mock('Psr\Http\Message\ResponseInterface');
 
+        $this->setExpectedException('Phapi\Exception\MethodNotAllowed', 'The override method PUT are not allowed to override the original GET request method.');
         $response = $middleware(
             $request,
             $response,
@@ -107,6 +108,7 @@ class MethodOverrideTest extends TestCase
         //$request->shouldReceive('withMethod')->with('PUT')->andReturnSelf();
         $response = \Mockery::mock('Psr\Http\Message\ResponseInterface');
 
+        $this->setExpectedException('Phapi\Exception\MethodNotAllowed', 'The override method HEAD are not allowed to override the original GET request method.');
         $response = $middleware(
             $request,
             $response,
@@ -149,6 +151,7 @@ class MethodOverrideTest extends TestCase
         //$request->shouldReceive('withMethod')->with('PUT')->andReturnSelf();
         $response = \Mockery::mock('Psr\Http\Message\ResponseInterface');
 
+        $this->setExpectedException('Phapi\Exception\MethodNotAllowed', 'The override method PUT are not allowed to override the original POST request method.');
         $response = $middleware(
             $request,
             $response,

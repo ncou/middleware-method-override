@@ -3,6 +3,7 @@
 namespace Phapi\Middleware\MethodOverride;
 
 use Phapi\Contract\Middleware\Middleware;
+use Phapi\Exception\MethodNotAllowed;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -87,6 +88,10 @@ class MethodOverride implements Middleware
                 $request = $request->withAttribute('originalRequestMethod', $method);
                 // Set the override method as request method
                 $request = $request->withMethod($override);
+            } else {
+                throw new MethodNotAllowed(
+                    'The override method '. $override .' are not allowed to override the original '. $method .' request method.'
+                );
             }
         }
 

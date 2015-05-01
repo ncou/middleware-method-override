@@ -1,6 +1,8 @@
 # Method Override Middleware
 Middleware handling and allowing to override the original request method. This is useful when the client aren't able to send other native request methods than GET and POST.
 
+A 405 Method Not Allowed will be returned to the client if the override method aren't allowed due to the original request method (for example: override GET with PUT).
+
 ## Installation
 This middleware is by default included in the [Phapi Framework](https://github.com/phapi/phapi) but if you need to install it it's available to install via [Packagist](https://packagist.org) and [Composer](https://getcomposer.org).
 

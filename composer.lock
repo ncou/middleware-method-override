@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ddee1a392e8917758b3cb1bfc87e53bb",
+    "hash": "6a7a5d8add7428c6615d68429f80e23f",
     "packages": [
         {
             "name": "phapi/contract",
@@ -50,115 +50,17 @@
             "time": "2015-04-28 10:42:44"
         },
         {
-            "name": "phapi/exception",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phapi/exception.git",
-                "reference": "6fa08864eb5779b2530e69d1e35b383ef432de14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phapi/exception/zipball/6fa08864eb5779b2530e69d1e35b383ef432de14",
-                "reference": "6fa08864eb5779b2530e69d1e35b383ef432de14",
-                "shasum": ""
-            },
-            "require": {
-                "phapi/contract": "dev-master",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "phpunit/phpunit": "4.6.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phapi\\": "src/Phapi/",
-                    "Phapi\\Exception\\": "src/Phapi/Exception/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Peter Ahinko",
-                    "email": "peter@ahinko.se",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Phapi Exceptions",
-            "homepage": "http://phapi.github.io",
-            "keywords": [
-                "exception",
-                "exceptions",
-                "phapi"
-            ],
-            "time": "2015-04-23 10:28:12"
-        },
-        {
-            "name": "phapi/http",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phapi/http.git",
-                "reference": "3a622d90bed8c79bfd77c18ea63317fd1f0bfa85"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phapi/http/zipball/3a622d90bed8c79bfd77c18ea63317fd1f0bfa85",
-                "reference": "3a622d90bed8c79bfd77c18ea63317fd1f0bfa85",
-                "shasum": ""
-            },
-            "require": {
-                "phapi/contract": "dev-master",
-                "php": ">=5.5.0",
-                "psr/http-message": "0.10.*"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "phpunit/phpunit": "4.6.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phapi\\Http\\": "src/Phapi/Http/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Peter Ahinko",
-                    "email": "peter@ahinko.se",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Phapi HTTP Message is an implementation of PSR-7 used by the Phapi framework",
-            "homepage": "http://phapi.github.io",
-            "keywords": [
-                "http message",
-                "phapi",
-                "psr-7"
-            ],
-            "time": "2015-05-01 13:23:02"
-        },
-        {
             "name": "psr/http-message",
-            "version": "0.10.1",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "9723465b3e7c8ecb0436f066bfb8a13e1bac1789"
+                "reference": "809419e498a388dfa7ef6898392431e5911a0289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/9723465b3e7c8ecb0436f066bfb8a13e1bac1789",
-                "reference": "9723465b3e7c8ecb0436f066bfb8a13e1bac1789",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/809419e498a388dfa7ef6898392431e5911a0289",
+                "reference": "809419e498a388dfa7ef6898392431e5911a0289",
                 "shasum": ""
             },
             "type": "library",
@@ -191,7 +93,7 @@
                 "request",
                 "response"
             ],
-            "time": "2015-04-13 14:20:01"
+            "time": "2015-05-04 20:20:08"
         }
     ],
     "packages-dev": [
@@ -1794,8 +1696,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "phapi/contract": 20,
-        "phapi/http": 20,
-        "phapi/exception": 20,
         "codeclimate/php-test-reporter": 20
     },
     "prefer-stable": false,

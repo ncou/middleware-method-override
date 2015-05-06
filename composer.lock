@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6a7a5d8add7428c6615d68429f80e23f",
+    "hash": "5155842d95481d72ea3fae7fd96f57cb",
     "packages": [
         {
             "name": "phapi/contract",
@@ -12,16 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phapi/contract.git",
-                "reference": "75156d929c52273b2e8c80d71d1bd840ca7e1c45"
+                "reference": "0159d335920e6e5e151cbb84a1b4d1e8911bd0df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phapi/contract/zipball/75156d929c52273b2e8c80d71d1bd840ca7e1c45",
-                "reference": "75156d929c52273b2e8c80d71d1bd840ca7e1c45",
+                "url": "https://api.github.com/repos/phapi/contract/zipball/0159d335920e6e5e151cbb84a1b4d1e8911bd0df",
+                "reference": "0159d335920e6e5e151cbb84a1b4d1e8911bd0df",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.5.0",
+                "psr/http-message": "0.11.*"
             },
             "type": "library",
             "autoload": {
@@ -47,7 +48,56 @@
                 "interfaces",
                 "phapi"
             ],
-            "time": "2015-04-28 10:42:44"
+            "time": "2015-05-06 10:59:37"
+        },
+        {
+            "name": "phapi/exception",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phapi/exception.git",
+                "reference": "6fa08864eb5779b2530e69d1e35b383ef432de14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phapi/exception/zipball/6fa08864eb5779b2530e69d1e35b383ef432de14",
+                "reference": "6fa08864eb5779b2530e69d1e35b383ef432de14",
+                "shasum": ""
+            },
+            "require": {
+                "phapi/contract": "dev-master",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phapi\\": "src/Phapi/",
+                    "Phapi\\Exception\\": "src/Phapi/Exception/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Ahinko",
+                    "email": "peter@ahinko.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Phapi Exceptions",
+            "homepage": "http://phapi.github.io",
+            "keywords": [
+                "exception",
+                "exceptions",
+                "phapi"
+            ],
+            "time": "2015-04-23 10:28:12"
         },
         {
             "name": "psr/http-message",
@@ -1696,6 +1746,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "phapi/contract": 20,
+        "phapi/exception": 20,
         "codeclimate/php-test-reporter": 20
     },
     "prefer-stable": false,

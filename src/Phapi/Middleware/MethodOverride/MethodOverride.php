@@ -68,7 +68,8 @@ class MethodOverride implements Middleware
      * @param ServerRequestInterface $request
      * @param ResponseInterface $response
      * @param callable $next
-     * @return ResponseInterface
+     * @return mixed
+     * @throws MethodNotAllowed
      */
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next = null)
     {
@@ -90,7 +91,8 @@ class MethodOverride implements Middleware
                 $request = $request->withMethod($override);
             } else {
                 throw new MethodNotAllowed(
-                    'The override method '. $override .' are not allowed to override the original '. $method .' request method.'
+                    'The override method '. $override .' are not allowed to override the original '.
+                    $method .' request method.'
                 );
             }
         }

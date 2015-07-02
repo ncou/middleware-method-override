@@ -1,8 +1,6 @@
 # Method Override Middleware
 Middleware handling and allowing to override the original request method. This is useful when the client aren't able to send other native request methods than GET and POST.
 
-A 405 Method Not Allowed will be returned to the client if the override method aren't allowed due to the original request method (for example: override GET with PUT).
-
 ## Installation
 This middleware is by default included in the [Phapi Framework](https://github.com/phapi/phapi) but if you need to install it it's available to install via [Packagist](https://packagist.org) and [Composer](https://getcomposer.org).
 
@@ -14,8 +12,10 @@ $ php composer.phar require phapi/middleware-method-override:1.*
 It's possible to configure what override methods are allowed when the original request method is GET or POST.
 
 Default settings:
-* <code>'CONNECT', 'TRACE', 'GET', 'HEAD', 'OPTIONS'</code> are allowed to override GET requests.
-* <code>'PATCH', 'PUT', 'DELETE', 'COPY', 'LOCK', 'UNLOCK'</code> are allowed to override POST requests.
+* <code>'CONNECT', 'TRACE', 'HEAD', 'OPTIONS'</code> are allowed to override <code>GET</code> requests.
+* <code>'PATCH', 'PUT', 'DELETE', 'COPY', 'LOCK', 'UNLOCK'</code> are allowed to override <code>POST</code> requests.
+
+A 405 Method Not Allowed will be returned to the client if the override method aren't allowed due to the original request method (for example: override GET with PUT).
 
 ```php
 <?php
@@ -28,6 +28,9 @@ $pipeline->pipe(new \Phapi\Middleware\Override\Method(
 );
 
 ```
+
+See the [configuration documentation](http://phapi.github.io/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
+
 
 ## Phapi
 This middleware is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi). The middleware are also [PSR-7](https://github.com/php-fig/http-message) compliant and implements the [Phapi Middleware Contract](https://github.com/phapi/contract).

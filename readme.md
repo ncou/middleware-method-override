@@ -29,7 +29,7 @@ $pipeline->pipe(new \Phapi\Middleware\Override\Method(
 
 ```
 
-See the [configuration documentation](http://phapi.github.io/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
+See the [configuration documentation](http://phapi.github.io/docs/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
 
 
 ## Phapi

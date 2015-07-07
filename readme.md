@@ -2,7 +2,7 @@
 Middleware handling and allowing to override the original request method. This is useful when the client aren't able to send other native request methods than GET and POST.
 
 ## Installation
-This middleware is by default included in the [Phapi Framework](https://github.com/phapi/phapi) but if you need to install it it's available to install via [Packagist](https://packagist.org) and [Composer](https://getcomposer.org).
+This middleware is by default included in the [Phapi Framework](https://github.com/phapi/phapi-framework) but if you need to install it it's available to install via [Packagist](https://packagist.org) and [Composer](https://getcomposer.org).
 
 ```shell
 $ php composer.phar require phapi/middleware-method-override:1.*
@@ -33,7 +33,7 @@ See the [configuration documentation](http://phapi.github.io/docs/started/config
 
 
 ## Phapi
-This middleware is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi). The middleware are also [PSR-7](https://github.com/php-fig/http-message) compliant and implements the [Phapi Middleware Contract](https://github.com/phapi/contract).
+This middleware is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi-framework). The middleware are also [PSR-7](https://github.com/php-fig/http-message) compliant and implements the [Phapi Middleware Contract](https://github.com/phapi/contract).
 
 ## License
 Method Override Middleware is licensed under the MIT License - see the [license.md](https://github.com/phapi/middleware-method-override/blob/master/license.md) file for details

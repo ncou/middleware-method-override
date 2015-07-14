@@ -1,4 +1,9 @@
 # Method Override Middleware
+
+[![Build status](https://img.shields.io/travis/phapi/middleware-method-override.svg?style=flat-square)](https://travis-ci.org/phapi/middleware-method-override)
+[![Code Climate](https://img.shields.io/codeclimate/github/phapi/middleware-method-override.svg?style=flat-square)](https://codeclimate.com/github/phapi/middleware-method-override)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/phapi/middleware-method-override.svg?style=flat-square)](https://codeclimate.com/github/phapi/middleware-method-override/coverage)
+
 Middleware handling and allowing to override the original request method. This is useful when the client aren't able to send other native request methods than GET and POST.
 
 ## Installation
